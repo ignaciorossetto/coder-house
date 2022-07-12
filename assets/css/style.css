@@ -1,0 +1,833 @@
+/* General a todos los archivos */
+
+/* General body y otros */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* MUY BUENO!! SIRVE PARA QUE NO HAYA SCROLLBAR HORIZONTAL..
+ME SIRVIO CUANDO TENIA EL PROBLEMA DEL FOOTER.
+
+body{
+    Overflow-x: hidden
+} */
+
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.wapp_png {
+    box-sizing: content-box;
+    position: fixed;
+    bottom: 45px;
+    right: 55px;
+    height: 38px;
+    width: 40px;
+    background-image: url("../multimedia/whatsapp.png");
+    background-size: cover;
+}
+
+.margins {
+    margin: 50px 25px 80px 25px;
+}
+
+/* Particular  archivo para PROXIMAMENTE */
+
+.proximamente__main{
+    display: inline;
+    align-items: center;
+    font-size: 50px;
+}
+.proximamente__main h1{
+    text-align: center;
+}
+
+/* General header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../multimedia/portada.jpg");
+    opacity: 1;
+    background-size: cover;
+    background-position: center 28%;
+    margin: 0px;
+    margin-bottom: 65px;
+    border-radius: 0px;
+}
+
+
+.header__marquee {
+    align-items: center;
+    font-weight: 1000;
+    color: black;
+}
+
+.maintitle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.header__mainTitle {
+    width: fit-content;
+    height: auto;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.628);
+    border-radius: 30px;
+    color: black;
+    text-align: left;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.header__nav__menu {
+    width: auto;
+    height: auto;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.628);
+    border-radius: 30px;
+    display: flex;
+}
+
+.header__nav__menu li {
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 5px 0 5px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header__nav__menu li:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+    font-weight: 1000;
+    opacity: 1;
+}
+
+.header__nav__menu li a {
+    color: black;
+}
+
+.header__nav__menu li a:visited {
+    color: black;
+
+}
+
+
+.header__nav ul ul {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: flex-end;
+    position: absolute;
+    right: 100px;
+    top: 210px;
+    visibility: hidden;
+    background-color: rgba(219, 216, 216, 0.628);
+    border-radius: 30px;
+    padding: 0px;
+    margin-top: 10px;
+    transition: 0.05s;
+
+
+}
+
+.header__nav ul ul li {
+    padding: 5px;
+    font-weight: 1000;
+    align-self: flex-start;
+
+}
+
+.header__nav ul li:hover ul {
+    visibility: visible;
+    overflow: visible;
+    align-content: center;
+    position: fixed;
+    z-index: 1
+}
+
+
+
+
+/* Footer General */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+}
+
+.footer__div__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 100px;
+}
+
+.footer__div__redes__titulo {
+    font-weight: lighter;
+}
+
+.footer__div__redes li {
+    display: inline-block;
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.footer__div__redes li i {
+    font-size: 40px;
+}
+
+.footer__div__redes li i a:visited {
+    color: black;
+}
+
+.footer__div__volverArriba {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer__div__volverArriba a {
+    color: black;
+
+}
+
+.footer__div__volverArriba a:visited {
+    color: black;
+}
+
+
+/* Particular  archivo index */
+
+
+.index__main__title {
+    margin-left: 35px;
+    font-weight: lighter;
+}
+
+.index__main__p {
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-indent: 1%;
+
+}
+
+
+.galeriahome {
+    display: grid;
+    grid-template-areas: "galeriahome__img1 galeriahome__img2 galeriahome__img2"
+        "galeriahome__img1 galeriahome__img3 galeriahome__img3";
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px;
+}
+
+
+.galeriahome_common{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:15px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    transform: scale(1.0) ;
+
+}
+.galeriahome_common:hover{
+    
+    transition: all 0.2s;
+    transform: scale(1.01);
+
+}
+
+.galeriahome__img1{
+    grid-area: galeriahome__img1;
+    background-image: url("../multimedia/galeria/bolso.jpg");
+    background-size: cover;
+    background-position: center 80%;
+}
+.galeriahome__img2{
+    grid-area: galeriahome__img2;
+    background-image: url("../multimedia/galeria/general.jpg");
+    background-size: cover;
+    background-position: left 10%;
+
+
+}
+.galeriahome__img3{
+    grid-area: galeriahome__img3;
+    background-image: url("../multimedia/galeria/ropa.jpg");
+    background-size: cover;
+    background-position: right 49%;
+    align-content: center 
+}
+
+.galeriahome_common__text{
+    font-size: 50px;
+}
+.galeriahome_common__text__comprar{
+    font-size: 25px;
+}
+
+.galeriahome__common__{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+    background-color:rgba(255, 255, 255, 0.772);
+}
+
+.galeriahome__common__:hover{
+    transition: all 0.5s;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.942);
+}
+
+/* Particular  archivo nosotros */
+
+.nosotros__main{
+    display: grid;
+    grid-template-areas: "title title"
+    "img1 img2";
+    justify-items: center;
+    grid-gap: 20px;
+    
+}
+
+.nosotros__main__img1{
+    display: flex;
+    align-items: center;
+    background-image: url("../multimedia/galeria/bordado.jpg");
+    background-size: cover;
+    background-position: bottom;
+    grid-area: img1;
+    height: 500px;
+    border-radius: 15px;
+    
+}
+.nosotros__main__img2{
+    display: flex;
+    align-items: center;
+    background-image: url("../multimedia/galeria/bordado1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    grid-area: img2;
+    height: 500px;
+    border-radius: 15px;
+
+
+}
+
+.nosotros__main__img__container{
+    background-color: rgba(255, 255, 255, 0.703);
+    margin: 50px;
+    overflow: wrap;
+  
+
+}
+
+.nosotros__main__img__container__title {
+    margin-left: 35px;
+    font-weight: lighter;
+    grid-area: title;
+    justify-content: center;
+}
+
+.nosotros__main__img__container__p {
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-indent: 1%;
+    font-weight: 800;
+    overflow: wrap;
+
+}
+
+
+/* Particular  archivo productos */
+/* Corregir clases!! */
+
+.products_grid {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+
+}
+
+
+.images {
+    width: 243.5px;
+    height: 305px;
+    border: 3px solid grey;
+    border-radius: 30px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    transform: scale(1);
+
+}
+
+.products_grid_item_a {
+    background-image: url("../multimedia/Almohadones.jpg");
+
+}
+
+.products_grid_item_b {
+    background-image: url("../multimedia/Bolsos.jpg");
+
+}
+
+.products_grid_item_c {
+    background-image: url("../multimedia/ropa.jpg");
+
+}
+
+.images__a {
+    opacity: 0;
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 10%;
+
+}
+
+.images__a a:visited {
+    color: white;
+}
+
+.images__b {
+    opacity: 0;
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 35%;
+
+}
+
+.images__b a:visited {
+    color: white;
+}
+
+.images__c {
+    opacity: 0;
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 6%;
+
+
+}
+
+.images__c a:visited {
+    color: white;
+}
+
+.images:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.3) inset;
+}
+
+.images p:hover {
+    opacity: 1;
+}
+
+
+
+/* Particular  archivo contacto */
+
+.contacto {
+    height: 500px;
+    border-radius: 30px;
+    background-color: rgba(231, 203, 203, 0.8);
+}
+
+
+.contacto__titulo {
+    text-align: center;
+
+}
+
+.contacto__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacto__form div {
+    margin: 15px 0px;
+}
+
+.contacto__form div input,
+textarea {
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 300;
+    outline: none;
+}
+
+.contacto__map div iframe,
+select {
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 300;
+    outline: none;
+}
+
+.contacto__map__iframe {
+    border-radius: 3px;
+    width: 380px;
+    height: 280px;
+}
+
+
+
+
+
+/* Particular  archivo almohadones */
+
+.almohadones {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: repeat(3, 485px);
+    align-self: center;
+    justify-content: center;
+
+}
+
+.alm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+.alm .img {
+    width: 100%;
+    height: 80%;
+    background-position: center;
+
+    margin-bottom: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+    transform: scale(1.0);
+
+}
+
+.alm .img:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    opacity: 0.9l;
+
+}
+
+
+
+.alm .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.almohadones__1 .img {
+    background-image: url("../multimedia/almohadones/almohadon_caracol_b_b.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.almohadones__2 .img {
+    background-image: url("../multimedia/almohadones/almohadon_caracol_b_b_flecos.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__3 .img {
+    background-image: url("../multimedia/almohadones/almohadon_caracol_n_n_flecos.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__4 .img {
+    background-image: url("../multimedia/almohadones/almohadon_mediapluma_b_b.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__5 .img {
+    background-image: url("../multimedia/almohadones/almohadon_mediapluma_b_b_flecos.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__6 .img {
+    background-image: url("../multimedia/almohadones/almohadon_mediapluma_b_n.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__7 .img {
+    background-image: url("../multimedia/almohadones/almohadon_mediapluma_n_n.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__8 .img {
+    background-image: url("../multimedia/almohadones/almohadon_pluma_b_b_flecos.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.almohadones__9 .img {
+    background-image: url("../multimedia/almohadones/almohadon_pluma_b_n.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+
+/* MEDIA PARA CONTACTO */
+
+@media screen and (min-width:456px) and (max-width:725px) {
+
+    .contacto {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .contacto__flex {
+        flex-direction: column;
+    }
+
+    .contacto__map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeriahome {
+        display: flex;
+        flex-direction: column;
+    }
+    .galeriahome_common{
+        height: 300px;
+    }
+    .galeriahome_common__text{
+        font-size: 40px;
+    }
+    .galeriahome_common__text__comprar{
+        font-size: 20px;
+    }
+
+    .proximamente__main{
+
+        font-size: 25px;
+    }
+
+
+
+}
+
+@media screen and (min-width:290px) and (max-width:455px) {
+
+    .contacto {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .contacto__flex {
+        flex-direction: column;
+    }
+
+    .contacto__map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto__map__iframe {
+        width: 100%;
+    }
+
+    .contacto__form__textarea textarea {
+        width: 100%;
+    }
+
+    .maintitle {
+        justify-content: center;
+    }
+
+    .header__mainTitle {
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .header__nav__menu {
+        width: min-content;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav__menu li {
+        padding: 5px;
+        font-weight: 1000;
+        justify-content: center;
+    }
+    .galeriahome {
+        display: flex;
+        flex-direction: column;
+    }
+    .galeriahome_common{
+        height: 300px;
+    }
+    .galeriahome_common__text{
+        font-size: 30px;
+    }
+    .galeriahome_common__text__comprar{
+        font-size: 20px;
+    }
+
+    .proximamente__main{
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* MEDIA FOOTER */
+
+@media screen and (min-width:300px) and (max-width:725px) {
+
+    .footer__div__redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+
+
+    }
+
+    .footer__div__volverArriba {
+        width: 100%;
+        left: 42%;
+    }
+
+    .almohadones {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(9, 355px);
+        align-self: center;
+
+    }
+
+    .alm .img {
+        margin-bottom: 0px;
+    }
+
+    .alm .info {
+
+        margin-bottom: 30px;
+    }
+    .nosotros__main{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+}
+
+
+/* ESPECIALES ALMOHADONES  */
+
+@media screen and (min-width:805px) and (max-width:1234px) {
+
+    .almohadones {
+        grid-template-columns: 400px 400px;
+        grid-template-rows: repeat(5, 485px);
+        align-self: center;
+
+    }
+
+
+}
+
+@media screen and (min-width:725px) and (max-width:804px) {
+
+    .almohadones {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat(5, 355px);
+        align-self: center;
+
+    }
+
+    .alm .info {
+        margin-bottom: 25px;
+    }
+
+    .nosotros__main{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .proximamente__main{
+
+        font-size: 40px;
+    }
+
+
+}
