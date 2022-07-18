@@ -1,35 +1,15 @@
 MEJORAS:
 
-seccionar el root en assets (multimedia y css), pages
+Tincho:
 
-agregar flexbox y grids donde sea necesario. Ver algun tutorial...
+Pensar como hacer la interfaz de mi vieja: Desde un url /admin?? 
+Tipo django? que podes crear nuevos objetos...
+En caso que si.. donde cargar las fotos por ejemplo.
 
-ver la parte de @media (ultima parte de la clase del lunes 27/6)
-puntos de quiebre, arrancar desde mobile. hay entre 3/4/5 puntos de quiebre.
+Deberia crear un upload, update y delete.
 
-el padding lo que permite es que cuando agranda la imagen no se arma el scroll horizontal.
-el margin si 
+Crear en cada objeto un bool para hacerlo visible, cosa que cuando itero en el forEach, lo salte y haga display en (todos menos bool = false) el siguiente.
 
-hacer un buen resumen de flexbox y grids, media, transformation, transition, shadow box??
+Otros:
 
-
-
------------- @media -------------
-
-CONTACTO
-
-min-width 725 en adelante (el que actualmente esta)
-
-menos de 725...
-
-Pasar el mapa abajo, tal vez a otro circulo rosa
-
-
-------- ROOTS ----------
-INDEX A PAGES.. CAMBIAR DE INDEX LAS REF A TODOS...referencia a css
-PORDUCTOS referencia a index. referencia a css  
-CONTACTO referencia a index. referencia a css 
-NOSOTROS referencia a index. referencia a css 
-CARRITO referencia a index. referencia a css 
-
-buscar todos los url de del archivo css
+Eventualmente voy a tener que hacer un pop up con la totalidad del carrito. y que todo lo que el usuario selecciono se cargue en la ventana "Carrito..."
